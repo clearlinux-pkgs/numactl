@@ -7,6 +7,7 @@ libnuma.so.1:libnuma_1.3
 libnuma.so.1:libnuma_1.4
 libnuma.so.1:libnuma_1.5
 libnuma.so.1:libnuma_1.6
+libnuma.so.1:libnuma_1.7
 libnuma.so.1:numa_alloc
 libnuma.so.1:numa_alloc_interleaved
 libnuma.so.1:numa_alloc_interleaved_subset
@@ -33,6 +34,7 @@ libnuma.so.1:numa_get_interleave_node
 libnuma.so.1:numa_get_membind
 libnuma.so.1:numa_get_mems_allowed
 libnuma.so.1:numa_get_run_node_mask
+libnuma.so.1:numa_has_home_node
 libnuma.so.1:numa_has_preferred_many
 libnuma.so.1:numa_interleave_memory
 libnuma.so.1:numa_max_node
@@ -72,6 +74,7 @@ libnuma.so.1:numa_set_interleave_mask
 libnuma.so.1:numa_set_localalloc
 libnuma.so.1:numa_set_membind
 libnuma.so.1:numa_set_membind_balancing
+libnuma.so.1:numa_set_mempolicy_home_node
 libnuma.so.1:numa_set_preferred
 libnuma.so.1:numa_set_preferred_many
 libnuma.so.1:numa_set_strict
