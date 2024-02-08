@@ -7,7 +7,7 @@
 #
 Name     : numactl
 Version  : 2.0.18
-Release  : 27
+Release  : 28
 URL      : https://github.com/numactl/numactl/archive/v2.0.18/numactl-2.0.18.tar.gz
 Source0  : https://github.com/numactl/numactl/archive/v2.0.18/numactl-2.0.18.tar.gz
 Summary  : libnuma libraries
@@ -87,7 +87,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1707405553
+export SOURCE_DATE_EPOCH=1707416521
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -145,7 +145,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1707405553
+export SOURCE_DATE_EPOCH=1707416521
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/numactl
 cp %{_builddir}/numactl-%{version}/LICENSE.GPL2 %{buildroot}/usr/share/package-licenses/numactl/06877624ea5c77efe3b7e39b0f909eda6e25a4ec || :
@@ -177,12 +177,6 @@ rm -f %{buildroot}*/usr/share/man/man2/move_pages.2
 /V3/usr/bin/numactl
 /V3/usr/bin/numademo
 /V3/usr/bin/numastat
-/VA/usr/bin/memhog
-/VA/usr/bin/migratepages
-/VA/usr/bin/migspeed
-/VA/usr/bin/numactl
-/VA/usr/bin/numademo
-/VA/usr/bin/numastat
 /usr/bin/memhog
 /usr/bin/migratepages
 /usr/bin/migspeed
@@ -202,7 +196,6 @@ rm -f %{buildroot}*/usr/share/man/man2/move_pages.2
 %files lib
 %defattr(-,root,root,-)
 /V3/usr/lib64/libnuma.so.1.0.0
-/VA/usr/lib64/libnuma.so.1.0.0
 /usr/lib64/libnuma.so.1
 /usr/lib64/libnuma.so.1.0.0
 
